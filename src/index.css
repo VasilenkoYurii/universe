@@ -1,13 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto+Slab&display=swap");
+@import url("https://meyerweb.com/eric/tools/css/reset/reset.css");
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background: #f0f0f0;
+  font-family: "Roboto Slab", serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100svh;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.canvas {
+  width: min(50svh, calc(100vw - 5rem));
+  aspect-ratio: 1 / 1;
+  margin-bottom: 0.5rem;
+}
+
+.score-wrapper {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: grey;
+  display: flex;
+  gap: 0.8rem;
+}
+
+.score {
+  width: 2.7ch;
+  text-align: center;
+}
+
+.color-left {
+  color: #f8ab2b;
+}
+
+.color-right {
+  color: #4d428b;
+}
+
+.speed-section {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  gap: 1rem;
+}
+
+.speed-player {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.speed-controls {
+  display: grid;
+  grid-template-columns: min-content min-content;
+  column-gap: 0.8rem;
+}
+
+.speed-label {
+  font-size: 1rem;
+  color: grey;
+  display: contents;
+  text-wrap: nowrap;
+  align-items: center;
 }
